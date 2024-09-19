@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARKNIGHT</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Style-mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="section_1">
+            <header>
+                <nav class="headerContainer">
+                    <div class="logo">
+                        <img src="img/Arknights_English_Release_Logo.svg.png" alt="logo" class="logo">
+                    </div>
+                    <div class="option">
+                        <a href="#about">
+                            <button class="headerButton"><h3>ABOUT</h3></button>
+                        </a>
+                        <a href="#galery">
+                            <button class="headerButton"><h3>GALERY</h3></button>
+                        </a>
+                        <a href="#contact">
+                            <button class="headerButton"><h3>CONTACT</h3></button>
+                        </a>
+                    </div>
+                    <div class="darkMode">
+                        <button id="darkMode">switch</button>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div class="section_2">
+            <div class="aside">
+                <aside class="aside-item">
+                    <div class="title">
+                        <h1>Become a Defender of Terra in Arknights</h1>
+                    </div>
+                    <div class="subtitle">
+                        <p>Lead your team of elite operators through tactical challenges, defend against waves of enemies, and uncover the mysteries of a dystopian world.</p>
+                    </div>
+                    <div class="Dlink">
+                        <a href="https://play.google.com/store/apps/details?id=com.YoStarEN.Arknights&pli=1"><button><img src="img/3.fa510ad1.png" alt="" class="Dimage"></button></a>
+                        <a href="https://apps.apple.com/us/app/arknights/id1464872022?mt=8"><button><img src="img/4.2928664f.svg" alt="" class="Dimage"></button></a>
+                    </div>
+                </aside>
+            </div>
+            <main>
+                <img src="img/char_4009_irene_2.png" alt="" class="immg">
+            </main>
+        </div>
+        <div class="section_3" id="about">
+            <div class="section_3-title">
+                <h1>ABOUT</h1>
+            </div>
+            <div class="aboutContainer">
+                <p><b style="font-size: 20px;">ARKNIGHT</b> adalah permainan strategi berbasis taktik yang dirancang untuk membawa pemain ke dunia dystopia yang dipenuhi dengan tantangan dan musuh yang beragam. Di tengah gejolak epidemi misterius yang disebut "Oripathy," pemain akan berperan sebagai seorang Dokter yang membimbing organisasi Rhodes Island dalam menghadapi berbagai konflik. Melalui manajemen operator yang terampil, pemain harus memanfaatkan kemampuan unik dari setiap karakter untuk menyusun strategi bertahan dan menyerang, meminimalkan korban jiwa, serta mencari solusi atas ancaman global yang kian meningkat.</p>
+                <p><b style="font-size: 20px;">ARKNIGHT</b> tidak hanya menawarkan pengalaman permainan yang menantang, tetapi juga memperkenalkan alur cerita mendalam dengan karakter-karakter yang memiliki latar belakang dan motivasi berbeda. Setiap misi dan pertempuran dirancang untuk menguji kemampuan berpikir taktis pemain dalam mengelola sumber daya yang terbatas dan mengambil keputusan strategis. Rhodes Island berjuang tidak hanya untuk melawan musuh eksternal, tetapi juga untuk memecahkan misteri di balik wabah Oripathy yang menghancurkan dunia.</p>
+            </div>
+        </div>
+        <div class="section_4" id="galery">
+            <div class="section_4-title">
+                <h1>GALERY</h1>
+            </div>
+            <div class="img-container">
+                <div class="img-container-1">
+                    <figure><img src="img/img-1.jpg" alt=""></figure>
+                    <figure><img src="img/img-2.jpg" alt=""></figure>
+                    <figure><img src="img/img-3.jpg" alt=""></figure>
+                </div>
+                <div class="img-container-1">
+                    <figure><img src="img/img-4.jpg" alt=""></figure>
+                    <figure><img src="img/img-5.jpg" alt=""></figure>
+                    <figure><img src="img/img-6.jpg" alt=""></figure>
+                </div>
+            </div>            
+        </div>
+        <div class="section_5" id="contact">
+            <footer class="footer">
+                <div class="footerSection-1">
+                    <div class="footerImg">
+                        <img src="img/logo.bc9c8b4d.png" alt="">
+                    </div>
+                </div>
+                <div class="footerSection-2">
+                    <h4>CONTACT</h4>
+                    <div class="contact-img">
+                        <a href="https://www.youtube.com/@ArknightsOfficialYostar"><img src="img/imgg1.png" alt=""></a>
+                        <a href="https://www.instagram.com/arknights_messenger_official"><img src="img/imgg2.png" alt=""></a>
+                        <a href="https://x.com/ArknightsEN?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3AArknightsEN%7Ctwcon%5Es1_c1"><img src="img/Screenshot 2024-09-19 092428.png" alt=""></a>
+                    </div>
+                </div>
+            </footer>
+            <div class="footerLink">
+                <a href="https://www.arknights.global/terms_of_service"><button>TERMS OF SERVICE</button></a>
+                <a href="https://www.arknights.global/privacy_policy"><button>PRIVACY POLICY</button></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggleButton = document.getElementById('darkMode');
+        const bodyElement = document.body;
+        const logoImage = document.querySelector('.logo img'); 
+
+        const lightModeLogo = 'img/Arknights_English_Release_Logo.svg.png';
+        const nightModeLogo = 'img/night-logo.png';
+
+        toggleButton.addEventListener('click', function() {
+            bodyElement.classList.toggle('night-mode');
+            
+            if (bodyElement.classList.contains('night-mode')) {
+                logoImage.src = nightModeLogo; 
+            } else {
+                logoImage.src = lightModeLogo;
+            }
+        });
+    </script>
+</body>
+</html>

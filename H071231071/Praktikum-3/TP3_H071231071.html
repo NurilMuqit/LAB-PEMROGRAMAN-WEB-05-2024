@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collective Cove</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .header-btn {
+            background-color: #c2e2fe; 
+            color: #00195f; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            border: none; 
+            transition: transform 0.2s, background-color 0.2s, color 0.2s; /* Tambahkan transisi untuk background dan color */
+        }
+    
+        .header-btn:hover {
+            background-color: #050f1f; /* Ubah warna latar belakang saat hover */
+            color: #ffffff;
+           
+        }
+
+        .carousel {
+          margin-top: 78px;
+        }
+
+
+
+        .carousel-caption h2, .carousel-caption p {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar-nav .nav-link {
+            color: #2c4ea8; 
+            font-weight: bold;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navbar-nav .nav-linkactive {
+            color: #121f42;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: #08224d;
+        }
+
+        .card {
+            transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+    
+        .card:hover {
+            box-shadow: 0 4px 20px rgb(255, 251, 251); 
+            transform: translateY(-5px); 
+        }
+
+        .card-box-shadow {
+            transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+    
+        .card-box-shadow:hover {
+            box-shadow: 0 8px 16px rgb(255, 251, 251); 
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav  class="navbar navbar-expand-lg bg-body-tertiary border-bottom fixed-top" style="background-color: white; position:fixed">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-2" href="#"> <!-- Adjust margin for spacing -->
+                    <img src="images\logo.png" alt="Logo" width="100%" height="50" class="d-inline-block align-text-top">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+
+    <main>
+      <div id="home" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/co7.jpg" class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption d-md-block text-center" style="z-index: 1;">
+                    <h2 style="font-size: 5vw;">Welcome to Collective Cove!</h2>
+                    <p style="font-size: 3vw;">Experience unforgettable culinary delights with a variety of delicious dishes and a cozy atmosphere.</p>
+                    <a href="#" class="btn btn-lg header-btn" style="font-size: 2.5vw; padding: 10px 20px;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg> Visit Our Cafe</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/co4.png" class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption d-md-block text-center" style="z-index: 1;">
+                    <h2 style="font-size: 5vw;">Welcome to Collective Cove!</h2>
+                    <p style="font-size: 3vw;">Experience unforgettable culinary delights with a variety of delicious dishes and a cozy atmosphere.</p>
+                    <a href="#" class="btn btn-lg header-btn" style="font-size: 2.5vw; padding: 10px 20px;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg> Visit Our Cafe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+       
+
+    <div id="about" class="container-fluid p-5" style="background-color:#f5f5f5">
+        <div class="row">
+            <div class="col-sm text-left">
+              <h2 style="color:#00195f;">-About Us</h2>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <img src="images\co8.png" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md mt-3">
+            <p class="justify-content-center">
+                Collective Cove is the perfect spot for those looking to combine productivity with a cozy café atmosphere. With its spacious seating, ample natural light, and reliable high-speed Wi-Fi, it's an 
+                ideal destination for remote workers and freelancers who want to escape the typical home office. The café’s thoughtfully designed interior, featuring comfortable chairs and quiet corners, offers the perfect environment 
+                for focus and creativity. Whether you're working on a project, holding virtual meetings, or simply catching up on emails, Collective Cove provides all the 
+                essentials needed for a productive workday.
+                <br>
+                <br>Beyond the practical aspects, Collective Cove adds a touch of indulgence to the workday with its excellent selection of coffees and freshly prepared food. From specialty 
+                brews to delicious pastries and healthy snacks, the menu offers something to keep you fueled throughout the day. The welcoming ambiance, combined with friendly service, ensures that 
+                you can enjoy both work and relaxation in equal measure. Collective Cove truly offers the best of both worlds, making it the go-to spot for anyone embracing the Work From Café lifestyle.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="menu" class="container-fluid p-5" style="background: linear-gradient(to top, #ffffff, #2c4ea8)">
+        <h2 class="p-3" style="color: #ffffff;">--Main Menu</h2>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card mx-auto shadow card-box-shadow img-fluid" style="width: 18rem;">
+                        <img src="images/WhatsApp Image 2024-09-26 at 23.42.53.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mx-auto shadow card-box-shadow img-fluid" style="width: 18rem;">
+                        <img src="images/WhatsApp Image 2024-09-26 at 23.42.52.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mx-auto shadow card-box-shadow img-fluid" style="width: 18rem;">
+                        <img src="images/WhatsApp Image 2024-09-26 at 23.42.52 (1).png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mx-auto shadow card-box-shadow img-fluid" style="width: 18rem;">
+                        <img src="images/WhatsApp Image 2024-09-26 at 23.42.51.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mx-auto shadow card-box-shadow img-fluid" style="width: 18rem;">
+                        <img src="images/WhatsApp Image 2024-09-26 at 23.42.50.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mx-auto shadow card-box-shadow img-fluid" style="width: 18rem;">
+                        <img src="images/76926984239.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+  <div id="gallery" class="container-fluid p-5" style="background: linear-gradient(to bottom, #ffffff, #f9eed0)">
+    <h2 style="color: #00195f;">-- Gallery</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <img src="images/image.png" class="img-fluid rounded" alt="Gallery Image 1">
+        </div>
+        <div class="col">
+            <img src="images/image (1).png" class="img-fluid rounded" alt="Gallery Image 2">
+        </div>
+        <div class="col">
+            <img src="images/image (2).png" class="img-fluid rounded" alt="Gallery Image 3">
+        </div>
+    </div>7
+<br><br>
+    <div class="row row-cols row-cols-md-3 g-4">
+      <div class="col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+          <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+      </svg>
+      </div>
+      <div class="col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
+          <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.44 12.44 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.52.52 0 0 0 .668.05A11.45 11.45 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049"/>
+          <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.46 9.46 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065m-2.183 2.183c.226-.226.185-.605-.1-.75A6.5 6.5 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.5 5.5 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091zM9.06 12.44c.196-.196.198-.52-.04-.66A2 2 0 0 0 8 11.5a2 2 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+      </svg>
+      </div>
+      <div class="col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="currentColor" class="bi bi-plug " viewBox="0 0 16 16">
+          <path d="M6 0a.5.5 0 0 1 .5.5V3h3V.5a.5.5 0 0 1 1 0V3h1a.5.5 0 0 1 .5.5v3A3.5 3.5 0 0 1 8.5 10c-.002.434-.01.845-.04 1.22-.041.514-.126 1.003-.317 1.424a2.08 2.08 0 0 1-.97 1.028C6.725 13.9 6.169 14 5.5 14c-.998 0-1.61.33-1.974.718A1.92 1.92 0 0 0 3 16H2c0-.616.232-1.367.797-1.968C3.374 13.42 4.261 13 5.5 13c.581 0 .962-.088 1.218-.219.241-.123.4-.3.514-.55.121-.266.193-.621.23-1.09.027-.34.035-.718.037-1.141A3.5 3.5 0 0 1 4 6.5v-3a.5.5 0 0 1 .5-.5h1V.5A.5.5 0 0 1 6 0M5 4v2.5A2.5 2.5 0 0 0 7.5 9h1A2.5 2.5 0 0 0 11 6.5V4z"/>
+      </svg>
+      </div>
+  </div>
+  
+    
+</div>
+  
+
+<div id="form" class="container-fluid p-5" style="background: linear-gradient(to top, #ffffff, #f9eed0)">
+  <h4 class="p-3" style="color: #08224d;">Share Your Joyful Moments at Collective Cove</h4>
+  <div class="container text-left">
+      <div class="row">
+          <div class="col-12 col-md">
+              <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"><strong>Name</strong></label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="your name here">
+              </div>
+              <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"><strong>Share here</strong></label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="mt-2">
+                  <a href="#" class="btn btn-md header-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                          <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                      </svg>
+                      Send
+                  </a>
+              </div>
+          </div>
+
+          <div class="col-12 col-md"> 
+              <img src="images/image (3).png" class="img-thumbnail img-fluid" alt="...">
+          </div>
+      </div>
+  </div>
+</div>
+
+    </main>
+
+  </main>
+  <footer id="contact" class="py-4" style="background-color:#08224d;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-start text-white text-md-start text-center">
+          <strong>© Collective Cove</strong>
+        </div>
+        <div class="col-md-8 text-end text-md-end text-center">
+          <div class="row">
+            <div class="col-md-12 mb-2">
+              <a href="https://www.instagram.com/blackpinkofficial/" target="_blank" class="text-white me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+                <strong>Instagram</strong> 
+              </a>
+              <a href="http://wa.me/6282193907744" target="_blank" class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg>
+                <strong>WhatsApp</strong> 
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    font-family: 'Fugit', sans-serif;
+}
+
+.about{
+    margin-top: 120px;
+}
+
+.carousel-indicators img {
+    width: 70px;
+    display: block;
+}
+.carousel-indicators button {
+    width: max-content!important;
+}
+.carousel-indicators {
+    position: unset;
+}
+
+.share{
+    margin-right: 450px;
+}
+
+.aboutSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    /* background-color: red; */
+}
+
+.sectionTitle{
+    background-color: teal;
+    color: white;
+}
+
+.footer{
+    /* background-color: red; */
+    padding: 5%;
+    background-image:url(assets/rwrs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+    background-size: 1500px 300px;
+}
+
+.mainText{
+    font-family: 'Fugit', sans-serif;
+}
+
+.intro{
+    margin-top: 50px;
+    /* background-color: red; */
+}
+
+.carousel{
+    margin-bottom: 90px;
+}
+
+
+.mainButton{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    border-style: solid;
+    border-color: rgb(218, 196, 0);
+    border-width: 4px;
+    transition: opacity 0.3s ease;
+}
+
+.mainButton:hover {
+    opacity: 0.5;
+    border-style: solid;
+    border-color: rgb(218, 196, 0);
+}
+
+.mainButton > svg:hover {
+    opacity: 0.5; 
+}
+
+.profile-image{
+    border-style: solid;
+    border-color: rgb(218, 196, 0);
+    border-width: 1px;
+    border-radius: 50%;
+}
+
+.carousel-inner{
+    background-color: rgb(1, 155, 155);
+}
+
+.img-hover {
+    transition: transform 0.3s ease; /* Untuk membuat transisi halus */
+}
+
+.img-hover:hover {
+    transform: scale(1.1); /* Zoom sebesar 10% */
+}
+
+/* Agar tidak membesar melewati bounding box parent */
+.col-md-4 {
+    overflow: hidden;
+}

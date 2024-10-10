@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kyoukai No Kanata Landing Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link rel="icon" href="/images/mirai-circular.png" type="image/x-icon" />
+        
+        <style>
+            * {
+                font-family: "Roboto Condensed", serif;
+            }
+
+            h1, h2, h3 {
+                font-family: "Bebas Neue";
+            }
+
+            .carousel-image {
+                height: 600px;
+                object-fit: cover;
+            }
+
+            @media (max-width: 768px) {
+                .carousel-image {
+                    height: 500px;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .carousel-image {
+                    height: 450px;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+    
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg sticky-top bg-white">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="logo" width="200px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#story">Story</a></li>
+                <li class="nav-item"><a class="nav-link" href="#characters">Characters</a></li>
+                <li class="nav-item"><a class="nav-link" href="#review">Review</a></li>
+                <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <!-- <section id="hero" class="bg-dark text-light d-flex align-items-center justify-content-center" style="background-image: url('/images/hero-background-darker.jpg'); background-size: cover; background-position: center; height: 100vh;">
+            <div class="container text-center" style="max-width: 700px;">
+                <h1>SELAMAT DATANG DI 境界の彼方</h1>
+                <p class="lead fst-italic">Kyoukai no Kanata menawarkan cerita yang mendalam dengan animasi memukau dari Kyoto Animation, menjadikannya tontonan wajib bagi penggemar anime yang mencari kombinasi aksi, emosi, dan visual yang indah. 🌟</p>
+                <a href="https://animepahe.ru/anime/3de39227-7dd2-a401-113b-df2d25cac45f" class="btn btn-primary btn-lg" target="_blank">Tonton Sekarang!</a>
+            </div>
+        </section> -->
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="position-relative">
+                <!-- Carousel dengan gambar responsif dan tinggi tetap -->
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" >
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/hero-background-darker.jpg" class="d-block w-100 carousel-image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/slide-4.jpg" class="d-block w-100 carousel-image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/slide-3.jpg" class="d-block w-100 carousel-image" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Teks di atas carousel -->
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center text-white p-3">
+                    <h1 class="display-4 display-md-3 display-lg-2">SELAMAT DATANG DI 境界の彼方</h1>
+                    <p class="lead fst-italic" style="max-width: 600px;">Kyoukai no Kanata menawarkan cerita yang mendalam dengan animasi memukau dari Kyoto Animation, menjadikannya tontonan wajib bagi penggemar anime yang mencari kombinasi aksi, emosi, dan visual yang indah. 🌟</p>
+                    <a href="https://animepahe.ru/anime/3de39227-7dd2-a401-113b-df2d25cac45f" target="_blank" class="btn btn-primary btn-lg mt-3">Tonton Sekarang!</a>
+                </div>
+            </div>
+        </section>
+
+        
+        
+
+
+        <!-- Story Section -->
+        <section id="story" class="py-5">
+            <h2 class="text-center mb-4">-- CERITA --</h2>
+
+            <div class="container bg-primary-subtle p-5 rounded-3 shadow-sm border border-info">
+
+            <p class="fs-5" style="text-align: justify;">
+                <mark>Kyoukai no Kanata</mark> bercerita tentang seorang siswa SMA bernama Akihito Kanbara yang ternyata adalah seorang setengah youmu, makhluk supranatural yang memiliki kemampuan untuk sembuh dengan cepat dari luka apapun. Suatu hari, Akihito bertemu dengan Mirai Kuriyama, seorang gadis yang merupakan satu-satunya yang selamat dari klan pejuang dunia arwah. Mirai memiliki kemampuan unik untuk memanipulasi darahnya menjadi senjata. Ketika Mirai mencoba bunuh diri, Akihito berusaha menyelamatkannya, namun Mirai malah menusuknya dengan pedang darahnya. Kejadian ini menjadi awal dari hubungan mereka yang rumit dan penuh tantangan.
+                <br><br>
+
+                Mirai, yang awalnya tidak percaya diri dalam memburu youmu, mulai mendapatkan dukungan dari Akihito. Mereka berdua kemudian bergabung dengan klub sastra yang juga beranggotakan dua pejuang spiritual lainnya, Hiroomi dan Mitsuki Nase. Bersama-sama, mereka menghadapi berbagai ancaman dari youmu yang semakin kuat dan berbahaya. Persahabatan dan perjuangan mereka menjadi inti dari cerita ini, di mana mereka harus menghadapi berbagai rintangan untuk melindungi dunia dari ancaman supranatural.
+                <br><br>
+            </p>
+
+            <div class="text-end">
+                <img src="/images/mirai-story.png" alt="" class="img-fluid">
+            </div>
+            
+            </div>
+        </section>
+
+
+        <!-- Characters Section -->
+        <section id="characters" class="py-5">
+            <h2 class="text-center mb-4">-- KARAKTER --</h2>
+            <div class="container bg-danger-subtle p-5 rounded-3 shadow-sm border border-danger">
+
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/images/character-akihito.png" class="card-img-top" alt="Character 1">
+                    <div class="card-body">
+                    <h5 class="card-title">Akihito Kanbara</h5>
+                    <p class="card-text">Seorang siswa setengah manusia dan setengah youmu yang memiliki kemampuan penyembuhan luar biasa dan tidak bisa mati.</p>
+                    </div>
+                </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/images/character-mirai.png" class="card-img-top" alt="Character 2">
+                    <div class="card-body">
+                    <h5 class="card-title">Mirai Kuriyama</h5>
+                    <p class="card-text">Seorang gadis dengan kemampuan memanipulasi darah yang merupakan satu-satunya anggota yang tersisa dari klan pemburu roh dunia.</p>
+                    </div>
+                </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/images/character-mitsuki.jpg" class="card-img-top" alt="Character 3">
+                    <div class="card-body">
+                    <h5 class="card-title">Mitsuki Nase</h5>
+                    <p class="card-text">Teman sekelas Akihito yang berasal dari keluarga pemburu roh terkemuka dan memiliki kemampuan untuk mengendalikan roh.</p>
+                    </div>
+                </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/character-hiroomi.png" class="card-img-top" alt="Character 3">
+                        <div class="card-body">
+                        <h5 class="card-title">Hiroomi Nase</h5>
+                        <p class="card-text">Kakak Mitsuki yang juga seorang pemburu roh dengan kemampuan untuk mengendalikan es.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/character-sakura.png" class="card-img-top" alt="Character 3">
+                        <div class="card-body">
+                        <h5 class="card-title">Sakura Inami</h5>
+                        <p class="card-text">Gadis pendiam yang bertekad untuk membalas dendam atas kematian kakaknya.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/etc.png" class="card-img-top" alt="Character 3">
+                        <div class="card-body">
+                        <h5 class="card-title">Dan masih banyak lagi...</h5>
+                        <p class="card-text">Yamaap,<br>Gwa lagi males nge-list semua karakternya :v</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Review Section -->
+        <section id="review" class="py-5">
+            <h2 class="text-center mb-4">-- ULASAN --</h2>
+            <div class="container bg-white p-5 rounded-3 shadow-sm border border-dark-subtle">
+
+                <div class="row mx-auto">
+                    <div class="col-md-6 mt-4">
+                        <div class="container bg-warning-subtle p-5 rounded-3 shadow-sm">
+                            <figure>
+                                <blockquote class="blockquote">
+                                <p>
+                                    Kyoukai No Kanata is not perfect, but it makes up for a lot of its flaws with gorgeous animation good laughs and a completely enjoyable ride the whole way through. The story of KnK definitely isn't original in the slightest to start off.
+                                </p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                Mchi in <cite title="Source Title">MyAnimeList</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mt-4">
+                        <div class="container bg-success-subtle p-5 rounded-3 shadow-sm">
+                            <figure>
+                                <blockquote class="blockquote">
+                                <p>
+                                    Despite the various bad comments and reviews panning this series, I took a leap of faith and decided to watch it. I must say that, although not the best anime of all time, it is an enjoyable anime series.
+                                </p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    MidnightWalker95 in <cite title="Source Title">MyAnimeList</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mx-auto">
+                    
+                    <div class="col-md-6 mt-4">
+                        <div class="container bg-danger-subtle p-5 rounded-3 shadow-sm">
+                            <figure>
+                                <blockquote class="blockquote">
+                                <p>
+                                    Kyoukai no Kanata was an entertaining anime. It was able to produce tears, surprise, excitement, and many laughs. The coherency of the plot may have been questionable, but nonetheless, the ride that the anime portrayed was over-exceeded any nuances with the direction of the story line.
+                                </p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    yogotah in <cite title="Source Title">MyAnimeList</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mt-4">
+                        <div class="container bg-info-subtle p-5 rounded-3 shadow-sm">
+                            <figure>
+                                <blockquote class="blockquote">
+                                <p>
+                                    This is by far one of my favorite (if not my favorite) anime of all time. Why, you ask? Well i'm about to tell you. From the beginning of the story I fell in love, not only with the animation but with the music and the characters and all other aspects of this show. I just thought it was so wonderful.
+                                </p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    marinasc in <cite title="Source Title">MyAnimeList</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <!-- Registration Form -->
+        <section id="register" class="py-5">
+            <h2 class="text-center mb-4">-- DAFTAR BUAT JADI KARBIT --</h2>
+            <div class="container bg-white p-5 rounded-3 shadow-sm border border-dark">
+            <form>
+                <div class="mb-3">
+                <label for="name" class="form-label">Nama karbit</label>
+                <input type="text" class="form-control" id="name" placeholder="Cth: Arelio / Cholyn">
+                </div>
+                <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="container bg-white text-dark text-center p-3 border border-dark rounded-3">
+            <p>&copy; 2024 Kyoukai No Kanata Landing Page | All Rights Reserved</p>
+            <a href="https://wa.me/+6287723390480" target="_blank"><i class='bx bxl-whatsapp bx-lg'></i></a>
+            <a href="https://www.instagram.com/radinata99/" target="_blank"><i class='bx bxl-instagram bx-lg'></i></a>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

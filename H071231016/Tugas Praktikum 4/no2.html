@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let productPrice = prompt('Masukkan harga barang: ');
+        if (productPrice > 0 ){
+            console.log("Harga awal: ", productPrice)
+            let productType = prompt('Masukkan jenis barang (Elektronik, Pakaian, Makanan, Lainnya): ');
+            let discountProduct = "";
+            let discount = 0;
+            if (productType.toLowerCase() == "elektronik"){
+                discountProduct = "Diskon: 10%";
+                discount = productPrice* 0.90;
+                console.log("Diskon: ", discountProduct)
+            } else if (productType.toLowerCase() == 'pakaian'){
+                discountProduct = "Diskon: 20%";
+                discount = productPrice * 0.80;
+                console.log("Diskon: ", discountProduct)
+            } else if (productType.toLowerCase() == 'makanan'){
+                discountProduct = "Diskon: 5%";
+                discount = productPrice * 0.95;
+                console.log("Diskon: ", discountProduct)
+            } else{
+                console.log("Terdapat kesalahan, silahkan cek kembali.")
+            }
+            console.log("Harga setelah diskon: ", discount)
+        }else if (productPrice < 0){
+            console.log ("Harga tidak boleh minus")
+        }else{
+            console.log ("Harga tidak boleh kosong")
+        }
+
+    </script>
+</body>
+</html>

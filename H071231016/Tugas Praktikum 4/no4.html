@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permainan Tebak Angka</title>
+</head>
+<body>
+    <h1>Permainan tebak angka! Silahkan di try fren</h1>
+    <script>
+        let angkaRandom = Math.floor(Math.random() * 100) + 1; // Menghasilkan angka random dari 1 hingga 100
+        let percobaanTebakan = 0; 
+        
+        function tebakAngka(tebakan) {
+            percobaanTebakan++;
+
+            if (tebakan < angkaRandom) {
+                alert("Terlalu rendah! Coba lagi.");
+            } else if (tebakan > angkaRandom) {
+                alert("WOAH. Terlalu tinggi! Coba lagi ya.");
+            } else {
+                alert(`Selamat! Kamu berhasil menebak angka ${angkaRandom} dengan benar dalam ${percobaanTebakan} percobaan. Keren sih!`);
+                return true;
+            }
+            return false;
+        }
+
+        do {
+            // Validasi input hanya boleh angka
+            if (isNaN(input)) {
+            let input = prompt("Tebak angka dari 1 sampai 100:");
+                alert("Input tidak valid! Silakan masukkan angka.");
+                continue;
+            }
+
+            // inputan hanya akan diterima jika berada dalam rentang 1-100
+            let tebakan = parseInt(input);
+            if (tebakan < 1 || tebakan > 100) {
+                alert("Hanya menerima input dari angka 1 hingga 100 saja!");
+                continue;
+            }
+        } while (!tebakAngka(tebakan));
+    </script>
+</body>
+</html>

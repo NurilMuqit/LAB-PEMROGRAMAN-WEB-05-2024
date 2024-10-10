@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const daysOfWeek = ['minggu','senin','selasa','rabu','kamis',"jum'at",'sabtu']
+        function getToKnowFutureDay(currentDay, daysToAdd){
+            const currentIndex = daysOfWeek.indexOf(currentDay.toLowerCase());
+
+            if (currentIndex === -1){
+                console.log("Hari Tidak Valid. Silahkan cek kembali.");
+                return ;
+            }
+            const futureIndex = (currentIndex + daysToAdd) % daysOfWeek.length;
+            return daysOfWeek[futureIndex];
+            
+        }
+
+        const currentDay = prompt("Masukkan hari awal/hari saat ini: ");
+        const daysToAdd = parseInt(prompt("Anda ingin melakukan pengecekan berapa hari ke depan?: ",10));
+
+        if(!isNaN(daysToAdd) && daysToAdd >= 0){
+            console.log(`${daysToAdd} hari setelah ${currentDay} adalah hari ${getToKnowFutureDay(currentDay,daysToAdd)}`);
+        }else{
+            console.log("Masukkan jumlah hari yang valid!")
+        }
+    </script>
+</body>
+</html>

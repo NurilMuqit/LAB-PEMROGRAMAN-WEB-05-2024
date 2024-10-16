@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/nyoba/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Minimalist Blackjack (gacor kang)</h1>
+        <div id="status"></div>
+        <div id="player-money">Uang Anda: $5000</div>
+        <div id="bet-section">
+            <label for="bet-input">Masukkan Taruhan (Minimal $100): </label>
+            <input type="number" id="bet-input" min="100" step="100" value="100">
+            <button id="place-bet">Taruhkan</button>
+            <button id="all-in">All In</button>
+        </div>
+        <div id="game-section" class="hidden">
+            <div class="hands">
+                <div class="hand">
+                    <h2>Pemain</h2>
+                    <div id="player-hand" class="cards"></div>
+                    <div>Total: <span id="player-total">0</span></div>
+                </div>
+                <div class="hand">
+                    <h2>Bandar</h2>
+                    <div id="dealer-hand" class="cards"></div>
+                    <div>Total: <span id="dealer-total">0</span></div>
+                </div>
+            </div>
+            <div id="controls">
+                <button id="hit">Hit</button>
+                <button id="stay">Stay</button>
+            </div>
+        </div>
+        <div id="game-over" class="hidden">
+            <div class="game-over-content">
+                <img src="/assets/images/lose.jpg" alt="Game Over" class="game-over-image">
+                <h2>Game Over</h2>
+                <p id="game-over-message"></p>
+                <button id="restart">Restart</button>
+            </div>
+        </div>
+    </div>
+
+
+    <audio id="background-music" src="/assets/sounds/bgm.mp3" loop></audio>
+    <audio id="win-sound" src="/assets/sounds/win.mp3"></audio>
+    <audio id="lose-sound" src="/assets/sounds/lose.mp3"></audio>
+    <audio id="push-sound" src="/assets/sounds/push.mp3"></audio>
+    <audio id="game-over-sound" src="/assets/sounds/game-over.mp3"></audio>
+
+    <button id="mute-button" class="mute-button">Coba tekan</button>
+
+    <script src="/nyoba/script.js"></script>
+</body>
+</html>

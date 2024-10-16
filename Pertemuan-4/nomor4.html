@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let random = Math.floor(Math.random() * 100) + 1;
+        console.log(random);
+        function countEvenNumber(awal, akhir) {
+            let count = 0;
+            let anggota = []
+            for (let i = awal; i <= akhir; awal++) {
+                if (i % 2 === 0)
+                    count++
+                anggota.push(i)
+            }
+            return count
+        }
+
+        console.log(countEvenNumber(1, 10))
+    </script>
+</body>
+
+</html>

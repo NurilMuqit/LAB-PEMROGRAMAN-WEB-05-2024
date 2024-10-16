@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const daysOfWeek = ['minggu','senin','selasa','rabu','kamis',"jum'at",'sabtu'];
+
+        function getToKnowFutureDay(currentDay, daysToAdd) {
+            const currentIndex = daysOfWeek.indexOf(currentDay.toLowerCase());
+
+            // Cek apakah nama hari valid
+            if (currentIndex === -1) {
+                alert(`${currentDay} bukan nama hari. Perhatikan inputan anda!`);
+                return; // Menghentikan eksekusi jika hari tidak valid
+            }
+
+            const futureIndex = (currentIndex + daysToAdd) % daysOfWeek.length;
+            return daysOfWeek[futureIndex];
+        }
+
+        // Ambil input dari pengguna
+        const currentDay = prompt("Masukkan hari awal/hari saat ini: ");
+        
+        // Validasi nama hari
+        if (daysOfWeek.indexOf(currentDay.toLowerCase()) === -1) {
+            alert(`${currentDay} tidak sesuai dengan nama hari yang benar. Tolong perhatikan inputan anda, ya!`);
+        } else {
+            const daysToAdd = parseInt(prompt("Anda ingin melakukan pengecekan berapa hari ke depan?: "), 10);
+
+            // Validasi apakah input daysToAdd adalah angka yang valid dan >= 0
+            if (!isNaN(daysToAdd) && daysToAdd >= 0) {
+                const futureDay = getToKnowFutureDay(currentDay, daysToAdd);
+
+                // Tampilkan hasil hanya jika nama hari valid
+                alert(`${daysToAdd} hari setelah ${currentDay} adalah hari ${futureDay}`);
+            } else {
+                alert("Masukkan jumlah hari yang valid!");
+            }
+        }
+    </script>
+</body>
+</html>

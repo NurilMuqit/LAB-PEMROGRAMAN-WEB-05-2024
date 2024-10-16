@@ -1,0 +1,373 @@
+body {
+    background-color: #121212;
+    color: #ffffff; 
+    font-family: 'JetBrains Mono', monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    padding: 40px;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: bounceIn 1s;
+}
+
+@keyframes bounceIn {
+    0%, 20%, 50%, 80%, 100% { 
+        transform: translateY(0); 
+    }
+    40% { 
+        transform: translateY(-30px); 
+    }
+    60% { 
+        transform: translateY(-15px); 
+    }
+}
+
+#status {
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: color 0.5s;
+}
+
+#player-money {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#bet-section {
+    margin-bottom: 30px;
+    animation: fadeIn 1s;
+}
+
+#bet-section label {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#bet-input {
+    padding: 10px;
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+    margin-right: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    transition: transform 0.3s;
+}
+
+#bet-input:focus {
+    transform: scale(1.05);
+}
+
+#bet-section button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #121212;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#bet-section button:hover {
+    background-color: #dddddd;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+.hands {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    animation: fadeIn 1s;
+}
+
+.hand {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    animation: floatIn 1s;
+}
+
+@keyframes floatIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.hand h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.card {
+    width: 80px;
+    height: 120px;
+    background-color: #ffffff;
+    color: #121212;
+    border: 2px solid #121212;
+    border-radius: 8px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    animation: flipIn 0.6s forwards;
+}
+
+@keyframes flipIn {
+    from { transform: rotateY(90deg); opacity: 0; }
+    to { transform: rotateY(0); opacity: 1; }
+}
+
+#controls {
+    margin-top: 20px;
+    animation: fadeInUp 1s;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#controls button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #121212;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#controls button:hover {
+    background-color: #dddddd;
+    transform: scale(1.05);
+}
+
+#hit {
+    background-color: #ff9800;
+    color: #ffffff;
+}
+
+#stay {
+    background-color: #2196f3;
+    color: #ffffff;
+}
+
+#all-in {
+    background-color: #f44336;
+    color: #ffffff;
+}
+
+#place-bet, #restart {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.game-over-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(18, 18, 18, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s;
+}
+
+.game-over-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.game-over-content h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    animation: bounceIn 1s;
+    color: #f44336;
+}
+
+.game-over-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.game-over-content button {
+    padding: 15px 30px;
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #ffffff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.game-over-content button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+#continue {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#round-restart {
+    background-color: #f44336;
+    color: white;
+}
+
+#continue:hover {
+    background-color: #45a049;
+}
+
+#round-restart:hover {
+    background-color: #da190b;
+}
+
+#controls button {
+    margin: 0 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.game-over-content button:hover {
+    background-color: #388e3c;
+}
+
+.status-win {
+    color: #4caf50;
+}
+
+.status-lose {
+    color: #f44336;
+}
+
+.status-push {
+    color: #ff9800;
+}
+
+.mute-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #121212;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.mute-button:hover {
+    background-color: rgba(221, 221, 221, 0.8);
+    transform: scale(1.05);
+}
+
+@media (max-width: 800px) {
+    .hands {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hand {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 60px;
+        height: 90px;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .hand h2 {
+        font-size: 28px;
+    }
+
+    #status, #player-money {
+        font-size: 20px;
+    }
+
+    #bet-section label, #bet-input {
+        font-size: 18px;
+    }
+
+    #bet-section button, #controls button, #restart {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .game-over-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .game-over-content h2 {
+        font-size: 36px;
+        color: #f44336;
+    }
+
+    .game-over-content p {
+        font-size: 20px;
+
+    }
+}

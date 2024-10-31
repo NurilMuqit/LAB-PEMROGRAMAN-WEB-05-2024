@@ -1,0 +1,29 @@
+/* CSS for body and background */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bg {
+    background-image: url('image/bg1.png');
+    background-size: cover;
+    background-position: center;
+    color: azure;
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Allow it to grow and fill the available space */
+}
+
+#dealer-cards img, #your-cards img {
+    height: 125px;
+    width: 85px;
+    margin: 5px;
+}
+
+#hit, #stay {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
